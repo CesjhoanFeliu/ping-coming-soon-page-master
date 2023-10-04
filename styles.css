@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+input {
+  text-indent: 3em;
+  font-family: "Libre Franklin", sans-serif;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block !important;
+  margin: 1px solid var(--Light-Red);
+}
+.container {
+  margin: 10% auto;
+  width: 400px;
+  height: auto;
+}
+.container__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5em;
+}
+.container__p {
+  text-align: center;
+}
+.container__p h1 {
+  margin-bottom: 25px;
+}
+.container__p p {
+  margin-bottom: 40px;
+  font-family: "Libre Franklin", sans-serif;
+}
+.container__inputs--img__imagen {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container__input--buttom {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.container__input--buttom input {
+  height: 50px;
+  width: 90%;
+  border-radius: 40px;
+  border: 1px solid var(--Gray);
+}
+
+.container__input--buttom p {
+  font-size: 14px;
+  color: var(--Light-Red);
+  margin: 10px 0px 25px;
+}
+.container__input--buttom button {
+  height: 50px;
+  width: 90%;
+  border-radius: 40px;
+  color: white;
+  background-color: var(--Blue);
+  border: none;
+  margin-top: 1em;
+}
+
+.container__input--buttom button:hover {
+  background-color: var(--Pale-Blue);
+  color: black;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.container__input--buttom button span {
+  font-size: 14px;
+
+  font-family: "Libre Franklin", sans-serif;
+}
+.container__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__p h1 span {
+  font-weight: 100;
+  color: var(--Gray);
+}
+.container__icons__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0px 10px;
+  background-color: white;
+  text-align: center;
+  border: 1px var(--Gray) solid;
+  margin-top: 8em;
+  margin-bottom: 2.5em;
+}
+
+.con {
+  margin: 0 auto;
+  height: 22px;
+  fill: var(--Blue);
+}
+.container__copy {
+  text-align: center;
+}
+.container__copy__copy {
+  color: var(--Gray);
+  font-size: 0.8em;
+}
+.container__icons__icon:hover {
+  background-color: var(--Blue);
+  fill: white;
+  transition: 0.3s;
+}
+.container__icons__icon:hover .con {
+  fill: white;
+}
+
+/*Footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*Media*/
+@media (min-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+  .container__input--buttom {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .container__input--buttom input {
+    width: 50%;
+    margin-right: 2em;
+  }
+  .container__input--buttom button {
+    width: 22%;
+    margin-top: 0;
+  }
+  .container__inputs--img {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .container__p h1 {
+    font-size: 44px;
+  }
+  .container__p h1 span {
+    font-weight: 100;
+    color: var(--Gray);
+  }
+
+  .container__p_state {
+    position: absolute;
+    top: 50px;
+    left: 152px;
+  }
+}
